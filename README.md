@@ -57,9 +57,9 @@ The following hosted transactional email providers and APIs are sorted in descen
 
 ## 📦 Open-Source GitHub Projects
 
-Self-hosted and provider-agnostic transactional email systems, notification routers, and mail servers. Projects are listed in descending order by **GitHub Star Count**:
+Self-hosted and provider-agnostic transactional email systems, notification routers, and mail servers. Projects are listed in descending order by **GitHub Stars_Count**:
 
-| Project | Stars | Language | Primary Category | Description & Capabilities |
+| Project | GitHub_Stars | Language | Primary Category | Description & Capabilities |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Novu](https://github.com/novuhq/novu)** | [![Stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers) | TypeScript | 🔔 Notification & Email Infrastructure | Unified communications engine coordinating transactional email, SMS, push, in-app feeds, and chat with built-in provider routing and digest algorithms. |
 | **[Listmonk](https://github.com/knadh/listmonk)** | [![Stars](https://img.shields.io/github/stars/knadh/listmonk?style=social&color=white)](https://github.com/knadh/listmonk/stargazers) | Go | 📬 Newsletter & Transactional API | High-performance single-binary mail orchestrator backed by PostgreSQL; supports transactional API triggers with custom templates over upstream SMTP relays. |
@@ -112,7 +112,7 @@ Thank you for exploring this curated repository! If you find this directory valu
 1. 🍴 Fork this repository on GitHub.
 2. ✏️ Add or update items in [`README.md`](file:///C:/Users/hp/Documents/Projects/Awesome-Transactional-Email-Delivery/README.md) while maintaining the existing table structure and sorted order.
 3. 🏷️ Ensure all SaaS entries include explicit starting tier pricing and accurate free tier or trial conditions.
-4. 🌟 Ensure open-source additions include appropriate GitHub Star badges formatted with `style=social&color=white` linked to the repository stargazers page.
+4. 🌟 Ensure open-source additions include appropriate GitHub Stars_Badges formatted with `style=social&color=white` linked to the repository stargazers page.
 5. 🚀 Submit a pull request with a clear description of your additions.
 
 ---
