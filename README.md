@@ -1,253 +1,124 @@
-# Awesome-Unified-Work-Management-Workspace
-
-## Top Unified Work Management Workspace Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on All-in-One Workspaces, Task-Doc Integration & Self-Hosted Collaboration Hubs*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Unified Work Management Workspaces**. These tools enable teams to consolidate tasks, documents, goals, and communication into a single connected environment—reducing tool sprawl and providing the visibility needed to align execution with strategy.
-
-
-
-**Examples** include HubSpot Workspace, Notion, Monday.com, Asana, ClickUp, Smartsheet, Airtable, Coda, Basecamp, and Microsoft 365 (the category leaders).
-
-
-
-**Open-source emphasis**: Unified Work Management is a domain where open-source tooling is **fragmented but increasingly capable of replacing specific slices of the stack**. No single open-source project replicates the full "everything app" experience of Notion or ClickUp, but the ecosystem covers the major needs: **Huly** positions itself as an all-in-one replacement for Linear, Jira, Slack, Notion, and Motion , **Plane** serves as a Jira/Linear/Monday/ClickUp alternative for tasks and sprints , **AFFiNE** combines docs and whiteboards in a Notion/Miro hybrid , **NocoDB** and **Teable** provide Airtable-like database workspaces , and **Focalboard** offers a self-hosted Trello/Notion/Asana alternative . The critical gap: **no open-source workspace unifies tasks, docs, databases, and communication as seamlessly as Notion**—teams typically assemble 2–4 tools to cover the same surface area.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[HubSpot Workspace](https://www.hubspot.com/)**  
-
-  Unified workspace within HubSpot's CRM platform; connects tasks, documents, and communication to contact and deal records for sales and marketing teams.
-
-
-
-- **[Notion](https://www.notion.com/)**  
-
-  All-in-one workspace combining wikis, docs, databases, and project management with flexible block-based pages and template ecosystem.
-
-
-
-- **[Monday.com](https://monday.com/)**  
-
-  Work OS with customizable boards, dashboards, and automation for tracking projects and team workload across departments.
-
-
-
-- **[Asana](https://asana.com/)**  
-
-  Work management platform with portfolio views, goals tracking, and timeline dependencies for cross-team project visibility and accountability.
-
-
-
-- **[ClickUp](https://clickup.com/)**  
-
-  All-in-one productivity platform with tasks, docs, goals, whiteboards, and multiple views (List, Board, Gantt, Calendar) for teams seeking to consolidate tools.
-
-
-
-- **[Smartsheet](https://www.smartsheet.com/)**  
-
-  Spreadsheet-based work management with portfolio rollup reports, resource views, and cross-project dashboards for operational teams.
-
-
-
-- **[Airtable](https://www.airtable.com/)**  
-
-  Relational database-spreadsheet hybrid with views, automations, and interfaces for building custom work management applications.
-
-
-
-- **[Coda](https://coda.io/)**  
-
-  Document-tool hybrid combining docs, spreadsheets, and apps in a single canvas; strong for teams wanting custom workflows without separate tools.
-
-
-
-- **[Basecamp](https://basecamp.com/)**  
-
-  Project management and team communication with message boards, to-do lists, schedules, and file storage in a simple, opinionated interface.
-
-
-
-- **[Microsoft 365](https://www.microsoft.com/en-us/microsoft-365)**  
-
-  Integrated suite including **Microsoft Planner** (now unified with Project for the web and To Do for a single work management experience) , Teams, SharePoint, and Outlook for enterprise-wide collaboration.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### All-in-One Workspace Platforms
-
-
-
-- **[Huly](https://github.com/hcengineering/huly-selfhost)**  
-
-  Open-source **all-in-one project management platform** positioned as a replacement for Linear, Jira, Slack, Notion, and Motion (~28k GitHub stars)  . Combines project tracking, virtual office, chat, and docs in a single self-hosted workspace. **The closest open-source attempt at a unified "everything app"** for software teams—though each module is less deep than dedicated tools.
-
-
-
-- **[Initiative](https://github.com/beyonders-studio/initiative)**  
-
-  Self-hosted **shared workspace for communities and small teams** (pre-1.0)  . Bundles projects and tasks (board/table/calendar views), **real-time document editing** (docs, spreadsheets, whiteboards), calendars, wikis, galleries, queues, and dashboards. Includes a **marketplace of plug-ins** fed by a signed registry, and native apps for iOS, Android, Windows, Mac, and Linux. **The most comprehensive open-source attempt at unifying work artifacts** for non-enterprise groups—but pre-1.0 with API instability.
-
-
-
-- **[Cloudillo](https://github.com/cloudillo/cloudillo)**  
-
-  Decentralized, self-hosted **alternative to Google Workspace** (alpha, MPL-2.0)  . Plugin architecture includes Quillo (docs), Prezillo (presentations), Calcillo (spreadsheets), Taskillo (tasks), Notillo (wiki), Ideallo (whiteboard), and more. Features **CRDT-powered real-time collaboration** (Yjs), WebAuthn/passkey auth, and federation between instances. **The most ambitious open-source workspace unification**—but alpha-stage and Rust-server-dependent.
-
-
-
-### Task & Project Management (ClickUp/Monday Alternatives)
-
-
-
-- **[Plane](https://github.com/makeplane/plane)**  
-
-  The most mature open-source **Jira/Linear/Monday/ClickUp alternative** (~61k GitHub stars)  . Features work items, cycles (sprints), modules, pages, and five layout views (List, Board, Spreadsheet, Gantt, Calendar). Self-hostable with Docker. **The strongest open-source option for task-centric work management**—docs exist but are less central than in Notion.
-
-
-
-- **[Kaneo](https://github.com/usekaneo/kaneo)**  
-
-  Fast, simple open-source project management (MIT)  . Features Board, List, Calendar, and Gantt views; subtasks, dependencies, labels, comments, and time tracking; custom columns and fields with rules; GitHub/Gitea integration; REST API, CLI, and **MCP for AI assistants**. **The cleanest lightweight alternative** for teams wanting focused task management without workspace bloat.
-
-
-
-- **[Focalboard](https://github.com/mattermost-community/focalboard)**  
-
-  Open-source self-hosted **Trello/Notion/Asana alternative** (~26k GitHub stars)  . Provides kanban boards, table views, and card-based task management with multi-user collaboration. **Mature and stable**—though development pace has slowed compared to Plane.
-
-
-
-- **[Tududi](https://github.com/chrisvel/tududi)**  
-
-  Open-source "calm" system for organizing life and work (MIT, ~3.3k GitHub stars)  . Combines tasks, projects, notes, areas, and smart workflows; self-hosted or hosted. **A lightweight, opinionated alternative** for individuals and small teams wanting simplicity over feature depth.
-
-
-
-### Document & Knowledge Workspaces (Notion Alternatives)
-
-
-
-- **[AFFiNE](https://github.com/toeverything/AFFiNE)**  
-
-  Open-source knowledge base combining **block documents and infinite canvas** (Notion + Miro style) (~74k GitHub stars)  . Supports offline use, self-hosting via Docker, and AI-assisted creation. **The strongest open-source alternative to Notion's document experience**—but lacks integrated task management at ClickUp's depth.
-
-
-
-- **[Docmost](https://github.com/docmost/docmost)**  
-
-  Open-source collaborative wiki and documentation software, positioned as a **Confluence/Notion alternative** (~22k GitHub stars)  . Features spaces, nested pages, real-time collaboration, and permissions. **Best for documentation-centric workspaces**—tasks and databases require separate tools.
-
-
-
-### Database Workspaces (Airtable Alternatives)
-
-
-
-- **[NocoDB](https://github.com/nocodb/nocodb)**  
-
-  Open-source **Airtable alternative** (~65k GitHub stars)  . Turns any SQL database into a smart spreadsheet interface with grid, kanban, calendar, and gallery views; REST API and self-hostable. **The most mature open-source database workspace**—but it is a database UI, not a full task/doc workspace.
-
-
-
-- **[Teable](https://github.com/teableio/teable)**  
-
-  Open-source **Airtable alternative** built on PostgreSQL (~21k GitHub stars)  . Provides a spreadsheet-database hybrid with views, formulas, and collaboration. **A newer, Postgres-native option** for teams wanting Airtable-like functionality with data ownership.
-
-
-
-- **[APITable](https://github.com/apitable/apitable)**  
-
-  Open-source **API-oriented low-code platform** for building collaborative apps and databases (~16k GitHub stars)  . Positioned as an Airtable alternative with API-first architecture. **Best for developer-led database apps**—heavier setup than NocoDB.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Trestl** — Self-hosted project workspace for personal projects and small teams; features project updates with health status, weekly reviews, GitHub/Gitea connections, and Docker/Kubernetes deployment  . **Early-stage** (v0.6.0) but thoughtfully scoped for solo developers and small teams.
-
-- **Ideon** — Self-hosted visual workspace organizing repositories, notes, and links on an infinite canvas with Git versioning; AGPLv3  . **Niche spatial approach**—not a traditional task/doc workspace, but useful for visual thinkers managing project context.
-
-- **OpenProject** — Leading open-source project management software with Gantt charts, Agile boards, time tracking, and portfolio views (~16k GitHub stars)  . **Strong for traditional project management**—less unified workspace than Huly or Plane.
-
-
-
-**Frameworks for building custom systems**: The choice depends on which "unified" slice matters most. For **all-in-one software team workspace**, Huly . For **task-centric project management**, Plane or Kaneo . For **document + whiteboard hybrid**, AFFiNE . For **database workspace**, NocoDB or Teable . For **community workspace with everything**, Initiative (accepting pre-1.0 risk) . No open-source project delivers **Notion's seamless integration of docs, databases, and tasks** in a single polished experience—teams typically assemble 2–3 tools to match what a single SaaS workspace provides.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Unified work management platforms handling team data must comply with applicable privacy regulations and organizational governance policies; self-hosted solutions place full responsibility for security, backups, and updates on the operator.
-
-- **Open-source unified work management is fragmented by design**—Huly attempts the broadest unification but each module is less deep than dedicated tools ; Plane and Kaneo excel at tasks but lack Notion-level docs; AFFiNE excels at docs but lacks task depth. **No open-source workspace matches Notion or ClickUp's integration breadth** in a single polished product. Choose based on which slice your team uses most, or accept assembling multiple tools.
-
-- Verify license terms for commercial use; Huly, Plane, AFFiNE, NocoDB, and Teable are open-source (check repositories for specific licenses); Kaneo uses MIT ; Initiative is pre-1.0 (check repository); Cloudillo uses MPL-2.0 .
-
-
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Transactional Email Delivery Banner" width="100%" />
+</p>
+
+# 📨 Awesome Transactional Email Delivery
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Transactional-Email-Delivery"><img src="https://img.shields.io/badge/Category-Email%20Infrastructure-blue.svg" alt="Email Infrastructure" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Transactional-Email-Delivery/pulls"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 A curated list of top **Transactional Email Delivery** SaaS platforms, API providers, deliverability engines, and self-hosted open-source email infrastructure projects.
 
 ---
 
+## 📑 Table of Contents
 
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Email Platforms](#️-saas--hosted-email-platforms)
+- [📦 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🎯 Key Selection Criteria](#-key-selection-criteria)
+- [🤝 Support](#-support)
+- [⭐ Star History](#-star-history)
+- [📝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer](#️-disclaimer)
 
-**Made for team leads, operations managers, and organizations choosing their work management stack.**  
+---
 
-Let's make unified work management more open, but with clear eyes about the integration breadth that commercial all-in-one workspaces still hold.
+## 📊 Sector Overview & Market Dynamics
+
+The global transactional email and enterprise messaging infrastructure market is estimated at **$3.8 billion to $4.5 billion**, expanding at a 13–15% CAGR fueled by cloud-native microservices, multi-factor authentication (MFA/OTPs), real-time alerts, and product-led growth communications. The industry exhibits **moderate fragmentation with high concentration at the tier-1 infrastructure layer**—a few dominant cloud and communications behemoths (Amazon Web Services, Twilio/SendGrid, Sinch/Mailgun, Intuit/Mailchimp) capture majority outbound enterprise volume, while modern developer-experience platforms (Resend, Postmark) and self-hosted open-source solutions aggressively capture mid-market developers seeking lower latency, React/code-first email development, and sovereignty over deliverability infrastructure.
+
+---
+
+## ☁️ SaaS & Hosted Email Platforms
+
+The following hosted transactional email providers and APIs are sorted in descending order by **company scale (annual revenue / market valuation)**:
+
+| Platform | Company Scale (Revenue / Valuation) | Starting Paid Tier Pricing | Free Tier / Trial Limit | Key Highlights & Architecture |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Amazon SES](https://aws.amazon.com/ses/)** | 🏢 **~$105B+ AWS Annual Run-Rate** (Amazon ~$2.3T Market Cap) | 💳 **$0.10 per 1,000 emails** ($10/month for 100,000 emails; $0.12/GB attachments) | 🎁 **62,000 emails/month free forever** when called from EC2/Lambda (or 3,000 emails/month free for 12 months on AWS Free Tier) | ⚡ Industry price floor leader; ultra-reliable global AWS backbone; deeply integrates with SNS, SQS, CloudWatch, and IAM policies. |
+| **[Mandrill](https://mandrill.com/)** | 🏢 **~$1B+ Intuit Mailchimp Revenue** (Intuit ~$180B Market Cap) | 💳 **$20/month per block of 25,000 emails** (requires Mailchimp Standard plan starting at $20/month, total min ~$40/month) | 🎁 **500 free transactional trial emails** to any email address on your verified domain | ⚡ Transactional email add-on strictly tied to Mailchimp; synchronizes contact events and leverages Mailchimp template engines. |
+| **[HubSpot Transactional Email](https://www.hubspot.com/)** | 🏢 **~$2.6B+ Annual Revenue** (~$28B Market Cap) | 💳 **$300/month flat fee for dedicated IP & unlimited transactional sends** (requires Marketing Hub Pro starting at $890/month) | 🎁 **14-day free trial** of Marketing Hub with full platform feature access (no free-forever transactional tier) | ⚡ Unified customer journey tracking directly connected to HubSpot CRM, pipelines, and attribution reporting. |
+| **[SendGrid](https://sendgrid.com/)** | 🏢 **~$4.4B+ Twilio Annual Revenue** (~$15B Market Cap) | 💳 **$19.95/month for up to 50,000 emails/month** (Essentials plan) | 🎁 **100 emails/day free forever** (~3,000 emails/month) | ⚡ Ubiquitous industry standard; robust SMTP/REST API relay, dynamic templating, suppression list management, and deliverability insights. |
+| **[Mailgun](https://www.mailgun.com/)** | 🏢 **~$2.7B+ Sinch Annual Revenue** (Acquired for $1.9B) | 💳 **$15/month for up to 10,000 emails/month** (Basic plan, $1.50 per 1,000 overage) | 🎁 **30-day free trial with 5,000 free emails total** | ⚡ Renowned for developer-first REST APIs, advanced inbound MIME parsing, SPF/DKIM verification, and isolated EU/US GDPR regions. |
+| **[SparkPost](https://www.sparkpost.com/)** | 🏢 **~$600M+ Bird/MessageBird Group Valuation** | 💳 **$20/month for up to 50,000 emails/month** (Starter plan) | 🎁 **30-day free trial with 500 emails/month free limit** | ⚡ Enterprise high-volume sending engine powered by Momentum MTA; industry-leading deliverability analytics and predictive mailbox placement. |
+| **[Postmark](https://postmarkapp.com/)** | 🏢 **~$500M+ ActiveCampaign Valuation** | 💳 **$15/month for up to 10,000 emails/month** ($1.80 per 1,000 overage; 45-day log retention) | 🎁 **100 emails/month free forever** with complete API and dashboard access | ⚡ Ultra-fast delivery latency (sub-10s); strictly enforces architectural isolation between transactional and broadcast streams. |
+| **[Brevo](https://www.brevo.com/)** | 🏢 **~$120M+ Annual Revenue** (Valued at ~$500M+) | 💳 **$9/month for up to 5,000 emails/month** (Starter tier; no daily send limits) | 🎁 **300 emails/day free forever** (~9,000 emails/month total) | ⚡ Multi-channel communication suite uniting transactional email, SMS, WhatsApp API, and CRM on European-hosted infrastructure. |
+| **[Resend](https://resend.com/)** | 🏢 **~$100M+ Valuation** ($13M+ Seed/Series A from Y Combinator & Craft) | 💳 **$20/month for up to 50,000 emails/month** (Pro plan) | 🎁 **3,000 emails/month free forever** (100 emails/day limit, 1 custom domain) | ⚡ Built specifically for frontend/full-stack developers; first-class React Email component integration, modern REST API, and webhooks. |
+| **[MailerSend](https://www.mailersend.com/)** | 🏢 **~$35M+ MailerGroup Annual Revenue** | 💳 **$30/month for up to 50,000 emails/month** (Premium plan, $0.90 per 1,000 overage) | 🎁 **3,000 emails/month free forever** (100 emails/day limit, full API/SMTP access) | ⚡ Developer-friendly transactional email & SMS platform from the creators of MailerLite; visual drag-and-drop template builder & inbound routing. |
+
+---
+
+## 📦 Open-Source GitHub Projects
+
+Self-hosted and provider-agnostic transactional email systems, notification routers, and mail servers. Projects are listed in descending order by **GitHub Star Count**:
+
+| Project | Stars | Language | Primary Category | Description & Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Novu](https://github.com/novuhq/novu)** | [![Stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers) | TypeScript | 🔔 Notification & Email Infrastructure | Unified communications engine coordinating transactional email, SMS, push, in-app feeds, and chat with built-in provider routing and digest algorithms. |
+| **[Listmonk](https://github.com/knadh/listmonk)** | [![Stars](https://img.shields.io/github/stars/knadh/listmonk?style=social&color=white)](https://github.com/knadh/listmonk/stargazers) | Go | 📬 Newsletter & Transactional API | High-performance single-binary mail orchestrator backed by PostgreSQL; supports transactional API triggers with custom templates over upstream SMTP relays. |
+| **[docker-mailserver](https://github.com/docker-mailserver/docker-mailserver)** | [![Stars](https://img.shields.io/github/stars/docker-mailserver/docker-mailserver?style=social&color=white)](https://github.com/docker-mailserver/docker-mailserver/stargazers) | Shell / Python | 🐳 Fullstack SMTP Server | Production-ready, containerized mail server image equipped with Postfix, Dovecot, OpenDKIM, OpenDMARC, Fail2ban, and SpamAssassin. |
+| **[React Email](https://github.com/resend/react-email)** | [![Stars](https://img.shields.io/github/stars/resend/react-email?style=social&color=white)](https://github.com/resend/react-email/stargazers) | TypeScript | ⚛️ Email Templating & Components | Modern standard collection of high-quality, unstyled React components for crafting responsive transactional emails that render reliably across all clients. |
+| **[Postal](https://github.com/postalserver/postal)** | [![Stars](https://img.shields.io/github/stars/postalserver/postal?style=social&color=white)](https://github.com/postalserver/postal/stargazers) | Ruby | 📮 Complete Delivery Platform | Battle-tested full-featured alternative to SendGrid and Mailgun; supports incoming/outgoing mail, webhooks, click/open tracking, and multi-organization routing. |
+| **[Stalwart Mail Server](https://github.com/stalwartlabs/stalwart)** | [![Stars](https://img.shields.io/github/stars/stalwartlabs/stalwart?style=social&color=white)](https://github.com/stalwartlabs/stalwart/stargazers) | Rust | 🦀 Next-Gen Mail Server | Modern, all-in-one secure mail platform built entirely in Rust supporting JMAP, IMAP, SMTP, ACME TLS, DMARC, DKIM, and SPF validation. |
+| **[Transactional Email Templates](https://github.com/mailgun/transactional-email-templates)** | [![Stars](https://img.shields.io/github/stars/mailgun/transactional-email-templates?style=social&color=white)](https://github.com/mailgun/transactional-email-templates/stargazers) | HTML / CSS | 🎨 Production Email Templates | Open-source responsive HTML email templates for transactional use cases (password resets, order receipts, activation alerts) curated by Mailgun. |
+| **[Postmark Transactional Templates](https://github.com/ActiveCampaign/postmark-templates)** | [![Stars](https://img.shields.io/github/stars/ActiveCampaign/postmark-templates?style=social&color=white)](https://github.com/ActiveCampaign/postmark-templates/stargazers) | CSS / HTML | 📝 Production Email Templates | Rock-solid responsive transactional email templates crafted by Postmark, thoroughly tested across major desktop, web, and mobile email clients. |
+| **[Hermes](https://github.com/matcornic/hermes)** | [![Stars](https://img.shields.io/github/stars/matcornic/hermes?style=social&color=white)](https://github.com/matcornic/hermes/stargazers) | Go | ✉️ Programmatic Email Generator | Golang engine that programmatically creates clean, responsive, localized HTML and plain-text emails for transactional workflows. |
+| **[Dittofeed](https://github.com/dittofeed/dittofeed)** | [![Stars](https://img.shields.io/github/stars/dittofeed/dittofeed?style=social&color=white)](https://github.com/dittofeed/dittofeed/stargazers) | TypeScript | 🤖 Automated Messaging Engine | Modern open-source customer communication platform to orchestrate transactional and behavioral message sequences across email, SMS, and webhooks. |
+| **[Forward Email](https://github.com/forwardemail/free-email-forwarding)** | [![Stars](https://img.shields.io/github/stars/forwardemail/free-email-forwarding?style=social&color=white)](https://github.com/forwardemail/free-email-forwarding/stargazers) | JavaScript | 🔒 Privacy SMTP & Forwarding | Privacy-focused encrypted email service and transactional SMTP API with full support for DNS-based routing, spam filtering, and custom domains. |
+| **[Notifuse](https://github.com/Notifuse/notifuse)** | [![Stars](https://img.shields.io/github/stars/Notifuse/notifuse?style=social&color=white)](https://github.com/Notifuse/notifuse/stargazers) | TypeScript | 🎛️ Multi-Provider Email Platform | Self-hosted visual transactional and marketing platform featuring MJML drag-and-drop authoring and multi-provider relay switching (SES, Postmark, Mailgun). |
+| **[Cuttlefish](https://github.com/mlandauer/cuttlefish)** | [![Stars](https://img.shields.io/github/stars/mlandauer/cuttlefish?style=social&color=white)](https://github.com/mlandauer/cuttlefish/stargazers) | Ruby | 🦑 Transactional Mail Server | Transactional mail server featuring web dashboard observability, quota controls, automated retry mechanisms, and delivery status logging. |
+| **[Apache James](https://github.com/apache/james-project)** | [![Stars](https://img.shields.io/github/stars/apache/james-project?style=social&color=white)](https://github.com/apache/james-project/stargazers) | Java | ☕ Modular Enterprise Mail Server | Enterprise-grade modular messaging server supporting SMTP, LMTP, IMAP, and JMAP protocols with pluggable spool processing and custom matchers. |
+| **[Posta](https://github.com/goposta/posta)** | [![Stars](https://img.shields.io/github/stars/goposta/posta?style=social&color=white)](https://github.com/goposta/posta/stargazers) | Go | 📬 Self-Hosted Delivery API | Developer-first Go email delivery platform providing unified HTTP sending APIs, SMTP relay, dynamic templates, analytics, and tenant management. |
+| **[Larasend](https://github.com/savvyagents/larasend)** | [![Stars](https://img.shields.io/github/stars/savvyagents/larasend?style=social&color=white)](https://github.com/savvyagents/larasend/stargazers) | PHP / Laravel | 📮 Self-Hosted SES Dashboard | Self-hosted transactional management layer on top of Amazon SES; provides dedicated API keys, sending logs, bounce handlers, and webhook events. |
+| **[Senlo](https://github.com/IgorFilippov3/senlo)** | [![Stars](https://img.shields.io/github/stars/IgorFilippov3/senlo)](https://github.com/IgorFilippov3/senlo/stargazers) | TypeScript | 🔌 Provider-Agnostic Infrastructure | Decoupled email orchestration layer allowing developers to trigger transactional templates over any SMTP relay or provider (SES, Postmark, Resend). |
+
+---
+
+## 🎯 Key Selection Criteria
+
+When evaluating transactional email platforms and infrastructure:
+
+1. 🛡️ **Deliverability & Reputation Isolation**: High deliverability requires strict separation of transactional notifications (receipts, 2FA codes, password resets) from bulk marketing campaigns. Platforms like Postmark enforce stream isolation by default.
+2. 💰 **Infrastructure Ownership vs. Total Cost**: Amazon SES offers unmatched unit economics ($0.10/1,000 emails), but places operational burdens (IP warming, DNS validation, bounce management) on engineering teams. Modern APIs like Resend and Postmark trade margin for rapid developer onboarding.
+3. ⚙️ **Self-Hosting Realities**: Self-hosting mail software (e.g., Postal, Stalwart, Posta) solves data sovereignty and infrastructure costs. However, operational deliverability (warmup schedules, feedback loops, ASN reputation, blacklists) requires ongoing engineering stewardship.
+
+---
+
+## 🤝 Support
+
+Thank you for exploring this curated repository! If you find this directory valuable for your projects or infrastructure planning, please consider showing your support:
+
+- ⭐ **Star this repository** to help others discover it across GitHub.
+- 🍴 **Fork and contribute** your favorite transactional mail engines and tools.
+- 📢 **Share with fellow developers**, DevOps, and platform engineers.
+- ☕ **Buy a coffee or sponsor ongoing maintenance**: [Sponsor Ishan Dutta on GitHub](https://github.com/sponsors/ishandutta2007)
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Transactional-Email-Delivery&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Transactional-Email-Delivery&type=date&legend=top-left)
+
+---
+
+## 📝 How to Contribute
+
+1. 🍴 Fork this repository on GitHub.
+2. ✏️ Add or update items in [`README.md`](file:///C:/Users/hp/Documents/Projects/Awesome-Transactional-Email-Delivery/README.md) while maintaining the existing table structure and sorted order.
+3. 🏷️ Ensure all SaaS entries include explicit starting tier pricing and accurate free tier or trial conditions.
+4. 🌟 Ensure open-source additions include appropriate GitHub Star badges formatted with `style=social&color=white` linked to the repository stargazers page.
+5. 🚀 Submit a pull request with a clear description of your additions.
+
+---
+
+## ⚖️ Disclaimer
+
+- 📖 This list is a **community-curated resource** for technical evaluation and educational reference.
+- 🛡️ Sending transactional email requires strict compliance with international privacy and anti-spam statutes (e.g., CAN-SPAM, GDPR, CASL). Always verify DNS SPF, DKIM, and DMARC enforcement before sending production traffic.
+- 📜 Check third-party software licensing terms (e.g., AGPL, Apache 2.0, MIT) before embedding open-source engines into commercial architectures.
