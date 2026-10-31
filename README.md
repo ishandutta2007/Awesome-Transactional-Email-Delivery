@@ -57,7 +57,7 @@ The following hosted transactional email providers and APIs are sorted in descen
 
 ## 📦 Open-Source GitHub Projects
 
-Self-hosted and provider-agnostic transactional email systems, notification routers, and mail servers. Projects are listed in descending order by **GitHub Stars_Count**:
+Self-hosted and provider-agnostic transactional email systems, notification routers, and mail servers. Projects are listed in descending order by **GitHub_Stars_Count**:
 
 | Project | GitHub_Stars | Language | Primary Category | Description & Capabilities |
 | :--- | :--- | :--- | :--- | :--- |
@@ -112,7 +112,7 @@ Thank you for exploring this curated repository! If you find this directory valu
 1. 🍴 Fork this repository on GitHub.
 2. ✏️ Add or update items in [`README.md`](file:///C:/Users/hp/Documents/Projects/Awesome-Transactional-Email-Delivery/README.md) while maintaining the existing table structure and sorted order.
 3. 🏷️ Ensure all SaaS entries include explicit starting tier pricing and accurate free tier or trial conditions.
-4. 🌟 Ensure open-source additions include appropriate GitHub Stars_Badges formatted with `style=social&color=white` linked to the repository stargazers page.
+4. 🌟 Ensure open-source additions include appropriate GitHub_Stars_Badges formatted with `style=social&color=white` linked to the repository stargazers page.
 5. 🚀 Submit a pull request with a clear description of your additions.
 
 ---
@@ -122,3 +122,12 @@ Thank you for exploring this curated repository! If you find this directory valu
 - 📖 This list is a **community-curated resource** for technical evaluation and educational reference.
 - 🛡️ Sending transactional email requires strict compliance with international privacy and anti-spam statutes (e.g., CAN-SPAM, GDPR, CASL). Always verify DNS SPF, DKIM, and DMARC enforcement before sending production traffic.
 - 📜 Check third-party software licensing terms (e.g., AGPL, Apache 2.0, MIT) before embedding open-source engines into commercial architectures.
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Transactional-Email-Delivery&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Transactional-Email-Delivery_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Transactional-Email-Delivery_growth.svg">
+  </picture>
+</a>
