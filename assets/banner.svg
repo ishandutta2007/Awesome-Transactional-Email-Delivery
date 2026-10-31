@@ -1,175 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16;border-radius:14px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;overflow:hidden;">
+<svg width="800" height="250" viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradients -->
-    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="50%" stop-color="#090d16" />
-      <stop offset="100%" stop-color="#030712" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
     </linearGradient>
-
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
-    </linearGradient>
-
-    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
       <stop offset="50%" stop-color="#818cf8" />
       <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
-
-    <linearGradient id="accentBeam" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="1" />
-      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
-    </linearGradient>
-
-    <linearGradient id="glowPulse" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
-    </linearGradient>
-
-    <filter id="blurFilter" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="60" />
-    </filter>
-
-    <filter id="shadowFilter" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
-    </filter>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <style>
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 1; }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.25; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.4); }
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 38px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        text-anchor: middle;
+        animation: float 4s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        fill: #94a3b8;
+        text-anchor: middle;
+        animation: float 4s ease-in-out infinite;
+        animation-delay: 0.4s;
+        transform-origin: center;
+      }
+      .animated-circle {
+        animation: twinkle 3s infinite ease-in-out;
+        transform-origin: center;
+      }
+      .bar-glow {
+        animation: pulse 3s infinite ease-in-out;
+        transform-origin: center;
+      }
+      .tag-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        text-anchor: middle;
+      }
+    </style>
   </defs>
 
-  <style>
-    /* Dynamic floating particles & waves in background */
-    @keyframes floatParticle {
-      0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
-      50% { transform: translateY(-25px) translateX(15px); opacity: 0.7; }
-      100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
-    }
+  <!-- Background Layer -->
+  <rect width="800" height="250" fill="url(#bgGrad)" />
+  <rect width="800" height="250" fill="url(#grid)" />
+  <circle cx="400" cy="120" r="280" fill="url(#glow)" />
 
-    @keyframes pulseOrb {
-      0% { transform: scale(1) translate(0, 0); opacity: 0.3; }
-      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.55; }
-      100% { transform: scale(1) translate(0, 0); opacity: 0.3; }
-    }
+  <!-- Animated Particles in Background -->
+  <circle class="animated-circle" cx="70" cy="45" r="2.5" fill="#38bdf8" style="animation-delay: 0s;" />
+  <circle class="animated-circle" cx="730" cy="190" r="3" fill="#c084fc" style="animation-delay: 0.8s;" />
+  <circle class="animated-circle" cx="120" cy="205" r="2" fill="#818cf8" style="animation-delay: 1.5s;" />
+  <circle class="animated-circle" cx="680" cy="55" r="2.5" fill="#38bdf8" style="animation-delay: 2.2s;" />
+  <circle class="animated-circle" cx="210" cy="65" r="2" fill="#c084fc" style="animation-delay: 1.1s;" />
 
-    @keyframes beamFlow {
-      0% { transform: translateX(-1200px); }
-      100% { transform: translateX(1200px); }
-    }
+  <!-- Decorative Mail Route Line in Background -->
+  <path d="M 80,180 C 220,150 320,210 440,185 S 640,140 740,170" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="5,5" stroke-opacity="0.25" />
 
-    @keyframes mailFly {
-      0% { transform: translate(0, 0) scale(0.95); }
-      50% { transform: translate(10px, -8px) scale(1.02); }
-      100% { transform: translate(0, 0) scale(0.95); }
-    }
-
-    @keyframes beaconBlink {
-      0%, 100% { opacity: 0.4; transform: scale(0.9); }
-      50% { opacity: 1; transform: scale(1.2); }
-    }
-
-    .bg-orb-1 { animation: pulseOrb 10s ease-in-out infinite; transform-origin: center; }
-    .bg-orb-2 { animation: pulseOrb 14s ease-in-out infinite reverse; transform-origin: center; }
-    .particle-1 { animation: floatParticle 6s ease-in-out infinite; }
-    .particle-2 { animation: floatParticle 8s ease-in-out 1.5s infinite; }
-    .particle-3 { animation: floatParticle 7s ease-in-out 3s infinite; }
-    .particle-4 { animation: floatParticle 9s ease-in-out 4.5s infinite; }
-    .beam-line { animation: beamFlow 4.5s linear infinite; }
-    .mail-badge { animation: mailFly 4s ease-in-out infinite; }
-    .beacon { animation: beaconBlink 2.5s ease-in-out infinite; transform-origin: center; }
-  </style>
-
-  <!-- Base Canvas -->
-  <rect width="1200" height="360" fill="url(#bgGlow)" />
-
-  <!-- Background Animated Atmospheric Glows -->
-  <circle class="bg-orb-1" cx="220" cy="100" r="140" fill="#0284c7" filter="url(#blurFilter)" />
-  <circle class="bg-orb-2" cx="980" cy="240" r="160" fill="#6366f1" filter="url(#blurFilter)" />
-  <circle class="bg-orb-1" cx="600" cy="300" r="130" fill="#4338ca" filter="url(#blurFilter)" />
-
-  <!-- Subtle High-Tech Grid Matrix -->
-  <g stroke="#334155" stroke-opacity="0.18" stroke-width="1">
-    <line x1="0" y1="60" x2="1200" y2="60" />
-    <line x1="0" y1="120" x2="1200" y2="120" />
-    <line x1="0" y1="180" x2="1200" y2="180" />
-    <line x1="0" y1="240" x2="1200" y2="240" />
-    <line x1="0" y1="300" x2="1200" y2="300" />
-    <line x1="150" y1="0" x2="150" y2="360" />
-    <line x1="300" y1="0" x2="300" y2="360" />
-    <line x1="450" y1="0" x2="450" y2="360" />
-    <line x1="600" y1="0" x2="600" y2="360" />
-    <line x1="750" y1="0" x2="750" y2="360" />
-    <line x1="900" y1="0" x2="900" y2="360" />
-    <line x1="1050" y1="0" x2="1050" y2="360" />
-  </g>
-
-  <!-- Glowing Scanning Light Beam in Background -->
-  <g opacity="0.6">
-    <rect class="beam-line" y="179" width="400" height="2" fill="url(#accentBeam)" />
-  </g>
-
-  <!-- Floating Dynamic Particle Points -->
-  <circle class="particle-1" cx="180" cy="80" r="3" fill="#38bdf8" />
-  <circle class="particle-2" cx="340" cy="270" r="2.5" fill="#818cf8" />
-  <circle class="particle-3" cx="880" cy="70" r="3.5" fill="#c084fc" />
-  <circle class="particle-4" cx="1040" cy="210" r="2.5" fill="#38bdf8" />
-  <circle class="particle-1" cx="620" cy="50" r="2" fill="#67e8f9" />
-
-  <!-- Decorative Mail Route Vectors in Background -->
-  <path d="M 120,290 C 260,250 380,310 500,280 S 760,240 920,270 S 1080,240 1140,220" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.3" />
-
-  <!-- Animated Live Status Beacon Pill (Top Center) -->
-  <g transform="translate(475, 38)">
-    <rect width="250" height="28" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.2" />
-    <circle class="beacon" cx="22" cy="14" r="5" fill="#22c55e" />
-    <text x="36" y="19" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1.2">REAL-TIME DISPATCH ENGINE</text>
-  </g>
-
-  <!-- FOREGROUND CONTENT: Header & Subtitle (Crisp & Fully Legible) -->
-  <g filter="url(#shadowFilter)" text-anchor="middle">
-    <!-- Icon Envelope Emblem -->
-    <g class="mail-badge" transform="translate(600, 110)">
-      <circle cx="0" cy="0" r="32" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
-      <!-- SVG Mail Icon -->
-      <path d="M -16,-10 L 16,-10 C 18,-10 19,-9 19,-7 L 19,10 C 19,12 18,13 16,13 L -16,13 C -18,13 -19,12 -19,10 L -19,-7 C -19,-9 -18,-10 -16,-10 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
-      <path d="M -18,-9 L 0,4 L 18,-9" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Foreground Content: Brand Icon, Title, and Subtitle -->
+  <g>
+    <!-- Envelope Icon Symbol -->
+    <g transform="translate(400, 48)">
+      <circle cx="0" cy="0" r="20" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+      <path d="M -10,-6 L 10,-6 C 11,-6 12,-5 12,-4 L 12,6 C 12,7 11,8 10,8 L -10,8 C -11,8 -12,7 -12,6 L -12,-4 C -12,-5 -11,-6 -10,-6 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
+      <path d="M -11,-5 L 0,3 L 11,-5" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
     </g>
 
-    <!-- Main Title -->
-    <text x="600" y="192" fill="url(#titleGrad)" font-size="36" font-weight="800" letter-spacing="-0.5">
-      Awesome Transactional Email Delivery
-    </text>
+    <text x="400" y="105" class="title-text" fill="url(#textGrad)">Awesome Transactional Email</text>
+    <text x="400" y="138" class="subtitle-text">Curated Delivery Ecosystem: SaaS Providers, API Infrastructure &amp; Self-Hosted Systems</text>
+  </g>
 
-    <!-- Subtitle -->
-    <text x="600" y="228" fill="#e2e8f0" font-size="16" font-weight="500" letter-spacing="0.2">
-      API-Driven Sending, Deliverability Infrastructure &amp; Self-Hosted Mail Platforms
-    </text>
+  <!-- Glowing Accent Divider Bar -->
+  <rect class="bar-glow" x="275" y="160" width="250" height="3" rx="1.5" fill="url(#textGrad)" fill-opacity="0.85" />
 
-    <!-- Feature Pillars / Tags -->
-    <g transform="translate(600, 268)">
-      <!-- Tag 1: High Deliverability -->
-      <g transform="translate(-320, 0)">
-        <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
-        <text x="0" y="5" fill="#38bdf8" font-size="12" font-weight="600">⚡ Sub-Second Latency</text>
-      </g>
-      <!-- Tag 2: Stream Isolation -->
-      <g transform="translate(-105, 0)">
-        <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
-        <text x="0" y="5" fill="#818cf8" font-size="12" font-weight="600">🛡️ Stream Isolation</text>
-      </g>
-      <!-- Tag 3: Self-Hosted & OSS -->
-      <g transform="translate(110, 0)">
-        <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
-        <text x="0" y="5" fill="#c084fc" font-size="12" font-weight="600">📦 Self-Hosted Ready</text>
-      </g>
-      <!-- Tag 4: Developer APIs -->
-      <g transform="translate(320, 0)">
-        <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
-        <text x="0" y="5" fill="#34d399" font-size="12" font-weight="600">🚀 Modern Mail APIs</text>
-      </g>
+  <!-- Feature Pillar Pills in Foreground -->
+  <g transform="translate(400, 198)">
+    <!-- Pill 1: High Deliverability -->
+    <g transform="translate(-225, 0)">
+      <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="0" y="4" class="tag-text" fill="#38bdf8">High Deliverability</text>
+    </g>
+    <!-- Pill 2: Stream Isolation -->
+    <g transform="translate(-75, 0)">
+      <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="0" y="4" class="tag-text" fill="#818cf8">Stream Isolation</text>
+    </g>
+    <!-- Pill 3: Self-Hosted OSS -->
+    <g transform="translate(75, 0)">
+      <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="0" y="4" class="tag-text" fill="#c084fc">Self-Hosted OSS</text>
+    </g>
+    <!-- Pill 4: Modern APIs -->
+    <g transform="translate(225, 0)">
+      <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="0" y="4" class="tag-text" fill="#34d399">Developer APIs</text>
     </g>
   </g>
 
-  <!-- Bottom Accent Border -->
-  <rect x="0" y="356" width="1200" height="4" fill="url(#titleGrad)" />
+  <!-- Bottom Accent Stripe -->
+  <rect x="0" y="247" width="800" height="3" fill="url(#textGrad)" />
 </svg>
